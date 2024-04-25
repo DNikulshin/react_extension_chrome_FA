@@ -3,10 +3,6 @@
   "name": "React Extension FA",
   "description": "Extension React for FA",
   "version": "0.1.0",
-  "action": {
-    "default_popup": "index.html",
-    "default_icon": "popup_icon.png"
-  },
   "icons": {
     "32": "icons/icon_32x32.png",
     "64": "icons/icon_64x64.png",

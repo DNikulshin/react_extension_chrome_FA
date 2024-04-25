@@ -1,27 +1,33 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.app {
-    width: 100%;
+#ext-app-root {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 100px;
     height: auto;
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-direction: column;
+    gap: .5rem;
 }
 
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
+/* #ext-app-root:hover {
+    min-width: 400px;
+} */
+
+#ext-app-root .app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    background: gray;
 }
 
-.btn-counter {
-    padding: .5rem;
-}
-.counter {
-    margin-top: 2rem;
-    font-size: 1.5rem;
+#ext-app-root .btn {
+padding: .5rem;
+background: brown;
+color: white;
 }

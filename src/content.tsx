@@ -4,7 +4,7 @@ import './index.css'
 import App from "./App"
 
 const root = document.createElement("div")
-root.id = 'crx-root'
+root.id = 'ext-app-root'
 document.body.appendChild(root)
 
 ReactDOM.createRoot(root).render(
