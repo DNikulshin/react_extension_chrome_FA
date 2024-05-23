@@ -1,33 +1,61 @@
 #ext-app-root {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 99999;
-    width: 100px;
-    height: auto;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
+  position: absolute;
+  top: 0px;
+  right: -148px;
+  z-index: 99999;
+  min-width: 100px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.75s ease 0s;
 }
 
-/* #ext-app-root:hover {
-    min-width: 400px;
-} */
-
 #ext-app-root .app {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: .5rem;
-    background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: gray;
+  padding: 0.5rem;
 }
 
 #ext-app-root .btn {
-padding: .5rem;
-background: brown;
-color: white;
+  padding: 0.5rem;
+  background: brown;
+  color: white;
+}
+
+#ext-app-root .btn-toggle {
+  position: absolute;
+  left: -32px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  background-color: rgb(197, 194, 194);
+  outline: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+
+#ext-app-root .btn-toggle svg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  color: brown;
+}
+#ext-app-root .btn-toggle:hover {
+  color: brown;
+}
+
+#ext-app-root.active {
+  right: 0px;
+  transition: all 0.75s ease 0s;
 }
